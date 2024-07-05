@@ -1,0 +1,14 @@
+class Car{
+	int year; 
+	var brand;
+	var model;
+        
+        Car (this.brand, this.model, this.year);
+void printt(){
+	print("Brand:$brand, Model: $model, Year: $year");
+}
+void main()
+{
+	final car= Car ("Toyota", "Corolla", 2020); 
+	car.printt();
+}

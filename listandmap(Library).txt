@@ -1,0 +1,24 @@
+class Library {
+  final List<Map<String, dynamic>> books = [];
+
+  void addBook(String title, String author, int year) => books.add({
+        'title': title,
+        'author': author,
+        'year': year,
+      });
+
+  void printt() {
+   
+    for (var book in books) {
+      print('title:${book['title']},author:${book['author']},Year:${book['year']}');
+
+    }
+  }
+}
+
+void main() {
+  var library = Library();
+  library.addBook('1984', 'george Orwell', 1940);
+  library.addBook('How to kill a mockingbird', 'Harper Lee', 1960);
+  library.printt();
+}

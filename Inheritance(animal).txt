@@ -1,0 +1,16 @@
+Class Animal{
+	makesound()
+	{
+		print("some generic animal sound");
+	}
+}
+class Dog extends Animal{
+	makesound(){
+		print("Bark");
+ 	}
+}
+void main()
+{
+	Dog myDog=Dog():
+	myDog.makesound();
+}
